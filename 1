@@ -1,1 +1,49 @@
 # Python Project
+# Where do you live?
+# Where do you wanna go?
+# What major are you looking at?
+# 
+city = input('Which city are you interested in? ')
+if city == "Miami":
+    print("""Information available for: 
+    A: Minimum temperature 
+    B: Maximum temperature 
+    C: Average temperature""")
+    response = input("Please enter your choice: ")
+elif city == "Paris":
+    print("""Information available for: 
+    A: Minimum temperature 
+    B: Maximum temperature 
+    C: Average temperature""")
+    response = input("Please enter your choice: ")
+elif city == "Seoul":
+    print("""Information available for: 
+    A: Minimum temperature 
+    B: Maximum temperature 
+    C: Average temperature""")
+    response = input("Please enter your choice: ")
+else:
+    print("Sorry, I cannot help you")
+if city == "Miami":
+    if response == "A":
+        print(temp_df.Miami.min())
+    if response == "B":
+        print(temp_df.Miami.max())
+    if response == "C":
+        print(temp_df.Miami.mean())
+elif city == "Paris":
+    if response == "A":
+        print(temp_df.Paris.min())
+    if response == "B":
+        print(temp_df.Paris.max())
+    if response == "C":
+        print(temp_df.Paris.mean())
+elif city == "Seoul":
+    if response == "A":
+        print(temp_df.Seoul.min())
+    if response == "B":
+        print(temp_df.Seoul.max())
+    if response == "C":
+        print(temp_df.Seoul.mean())
+else:
+    print("Sorry, I cannot help you.")
